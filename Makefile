@@ -30,6 +30,11 @@ ifeq (check,$(MAKECMDGOALS))
   TEST := 1
 endif
 
+GBA=mgba-qt
+
+run: all
+	$(GBA) $(MODERN_ROM_NAME)
+
 # Default make rule
 all: rom
 
